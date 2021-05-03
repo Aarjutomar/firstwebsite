@@ -16,14 +16,24 @@
         .img1{
             margin-top: 450px;
         }
+        audio {
+            display: none;
+        }
     </style>
 </head>
 
 <body background="https://i.pinimg.com/originals/91/c9/51/91c951de2c4faa8ce3487dc9b7c65fdb.png"/>
-<marquee scrollamount="10" direction="right">
-    <img src="https://thumbs.gfycat.com/BoldWanDoe-max-1mb.gif"/>
-    <img class="img1" src="https://thumbs.gfycat.com/UnfoldedCautiousAnemone-max-1mb.gif"/>
-</marquee>
-    
+    <marquee scrollamount="10" direction="right">
+        <img src="https://thumbs.gfycat.com/BoldWanDoe-max-1mb.gif"/>
+        <img class="img1" src="https://thumbs.gfycat.com/UnfoldedCautiousAnemone-max-1mb.gif"/>
+    </marquee>
+    <audio id="my_audio" src="https://pic.pikbest.com/00/36/13/48s888piC2Q9.mp3" loop="loop"></audio>
+    <script>
+        window.onload = function() {
+           setTimeout(() => {
+                document.getElementById("my_audio").play();
+           }, 2000);
+        }
+    </script>
 </body>
 </html>
